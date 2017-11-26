@@ -1,5 +1,5 @@
 /*
-MIT License
+ MIT License
 
 Copyright (c) 2017 Maxime Coutte Peroumal Corne
 
@@ -20,27 +20,41 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-*/
+ */
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+ 
+// uncomment "NATIVE_USB" if you're using ARM CPU (Arduino DUE, Arduino M0, ..)
+#define NATIVE_USB
 
-public class wrmhlThread_Lines : wrmhlThread { // wrmhlThread_ReadLines is derived from the common wrmhl Thread.
+// uncomment "SERIAL_USB" if you're using non ARM CPU (Arduino Uno, Arduino Mega, ..)
+//#define SERIAL_USB
 
-	// This constructor will call wrmhlThread.wrmhlThread(string portName, int baudRate, int readTimeout)
-	public wrmhlThread_Lines(string portName, int baudRate, int readTimeout) : base(portName, baudRate, readTimeout) {
-	}
 
-	// This constructor will call wrmhlThread.wrmhlThread(string portName, int baudRate)
-	public wrmhlThread_Lines(string portName, int baudRate) : base(portName, baudRate){
-	}
+void setup() {
+  #ifdef NATIVE_USB
+    SerialUSB.begin(1); //Baudrate is irevelant for Native USB
+  #endif
 
-	public override string ReadProtocol() { // This is the only one reading protocol for 0.1 Alpha. This is a basique SerialPort ReadLine() method.
-			return deviceSerial.ReadLine();
-	}
+  #ifdef SERIAL_USB
+    Serial.begin(250000); // You can choose any baudrate, just need to also change it in Unity.
+    while (!Serial); // wait for Leonardo enumeration, others continue immediately
+  #endif
 
-	public override void SendProtocol(object message) { // This is the only one writing protocol for 0.1 Alpha. This is a basique SerialPort WriteLine() method.
-		deviceSerial.WriteLine((string) message);
-	}
+  
 }
+
+void loop() {
+  sendData("Hello World!");
+  delay(5);
+}
+
+void sendData(String data){
+   #ifdef NATIVE_USB
+    SerialUSB.println(data); // need a end-line
+  #endif
+
+  #ifdef SERIAL_USB
+    Serial.println(data); // need a end-line
+  #endif
+}
+
