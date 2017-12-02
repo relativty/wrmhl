@@ -38,3 +38,4 @@ Upload to the Arduino the following program:
 
 ## Run Run Run ! ✌️
 Select Assets/WRMHL/DemoScenes and choose the demo of your choice !
+<img src="/img/unity-play.gif">
