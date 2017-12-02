@@ -2,7 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// This script is used to read the data coming from the device.
+/*
+This script is used to read all the data coming from the device. For instance,
+If arduino send ->
+								{"1",
+								"2",
+								"3",}
+readQueue() will return ->
+								"1", for the first call
+								"2", for the second call
+								"3", for the thirst call
+
+This is the perfect script for integration that need to avoid data loose.
+If you need speed and low latency take a look to wrmhlReadLatest.
+*/
+
 public class wrmhlRead : MonoBehaviour {
 
 	wrmhl myDevice = new wrmhl(); // wrmhl is the bridge beetwen your computer and hardware.

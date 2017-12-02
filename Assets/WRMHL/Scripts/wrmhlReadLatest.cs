@@ -2,7 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// This script is used to read the data coming from the device.
+/*
+This script is used to read the latest data coming from the device. For instance,
+If arduino send ->
+								{"1",
+								"2",
+								"3",}
+readLatest() will return ->
+								"3"
+
+This is the perfect script for integration that need speed and low latency.
+If you need to avoid data loose take a look to wrmhlRead.
+*/
+
 public class wrmhlReadLatest : MonoBehaviour {
 
 	wrmhl myDevice = new wrmhl(); // wrmhl is the bridge beetwen your computer and hardware.
