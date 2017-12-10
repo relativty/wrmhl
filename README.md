@@ -34,7 +34,7 @@ Upload to the Arduino the following program:
 ### Assets, Import Package, Custom Package.. Go ⚡️
 <img src="/img/unity-package.gif">
 
-### Important ! :danger: Change the .NET 2.0 Subset to .NET 2.0 :danger: 
+### Important ! ⚠ Change the .NET 2.0 Subset to .NET 2.0 ⚠
 
 In order to do that : Go to <strong>Edit</strong> ➭  Then <strong>Project Settings</strong> ➭ <strong>Player</strong>, and under <strong>Other Settings</strong> find an option that reads <strong>Api Compatibility Level</strong> and change it from <strong>".NET 2.0 Subset" to ".NET 2.0".</strong>
 
