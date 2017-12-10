@@ -10,8 +10,6 @@
   <img src="https://img.shields.io/github/license/relativty/wrmhl.svg">
   <img src="https://img.shields.io/github/stars/relativty/wrmhl.svg">
   <img src="https://img.shields.io/github/issues/relativty/wrmhl.svg">
-  <img src="https://img.shields.io/github/issues/relativty/last-update/badges/shields/wrmhl.svg">
-  	>
 </p>
 
 # Getting Started ⚡️
