@@ -3,13 +3,14 @@
   <a href="https://github.com/relativty/wrmhl"><img src="/img/wrmhl.png" width="300"></a>
 </h1>
 
-<h4 align="center">Super fast communication beetwen Unity and Arduino ⚡️⚡️
+<h4 align="center">Super fast communication between Unity and Arduino ☄ ⚡️
 </h4>
 
 <p align="center">
   <img src="https://img.shields.io/github/license/relativty/wrmhl.svg">
   <img src="https://img.shields.io/github/stars/relativty/wrmhl.svg">
   <img src="https://img.shields.io/github/issues/relativty/wrmhl.svg">
+  <img src="https://img.shields.io/github/release/relativty/wrmhl.svg">
 </p>
 
 # Getting Started ⚡️
