@@ -34,7 +34,9 @@ Upload to the Arduino the following program:
 ### Assets, Import Package, Custom Package.. Go ⚡️
 <img src="/img/unity-package.gif">
 
-### Go to Edit ➭ Project Settings ➭ Player, and under "Other Settings" find an option that reads "Api Compatibility Level" and change it from ".NET 2.0 Subset" to ".NET 2.0".
+### Important ! :danger: Change the .NET 2.0 Subset to .NET 2.0 :danger: 
+
+In order to do that : Go to <strong>Edit</strong> ➭  Then <strong>Project Settings</strong> ➭ <strong>Player</strong>, and under <strong>Other Settings</strong> find an option that reads <strong>Api Compatibility Level</strong> and change it from <strong>".NET 2.0 Subset" to ".NET 2.0".</strong>
 
 ## Run Run Run ! 🚗
 Select Assets/WRMHL/DemoScenes and choose the demo of your choice !
