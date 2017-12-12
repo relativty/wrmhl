@@ -21,24 +21,24 @@ You can either install it using [Git](https://git-scm.com/) or direct [Download]
 $ git clone https://github.com/relativty/wrmhl
 ```
 
-## Upload on Arduino 🤖
+## Uploading to Arduino 🤖
 Upload to the Arduino the following program:
 #### Path: wrmhl/Arduino/Arduino.ino
 <img src="/img/arduino-upload.gif">
 
 ## On Unity3D ! 💻
-### Open the project, wrmhl folder or wrmhl-master 🌈
+Open the project either from **wrmhl folder** or **wrmhl-master** 🌈
 <img src="/img/unity-open.gif">
 
 ### Import the Package ! 📦
-<strong>Assets</strong>, <strong>Import Package</strong> and <strong>Custom Package..</strong> and you're good to <strong>GO ! </strong> ⚡️
+**Assets**, **Import Package** and **Custom Package..** and you're good to **GO !** ⚡️
 
 <img src="/img/unity-package.gif">
 
 ### Important ! ⚠ Change the .NET 2.0 Subset to .NET 2.0 ⚠
 
-In order to do that : Go to <strong>Edit</strong> ➭  Then <strong>Project Settings</strong> ➭ <strong>Player</strong>, and under <strong>Other Settings</strong> find an option that reads <strong>Api Compatibility Level</strong> and change it from <strong>".NET 2.0 Subset" to ".NET 2.0".</strong>
+In order to do that : Go to **Edit** ➭  Then **Project Settings** ➭ **Player**, and under **Other Settings** find an option that reads **Api Compatibility Level** and change it from **".NET 2.0 Subset" to ".NET 2.0".**
 
 ## Run it ! 🏁 🚗
-Select Assets/WRMHL/DemoScenes and choose the demo of your choice !
+Select **Assets/WRMHL/DemoScenes** and choose the **demo** of your choice !
 <img src="/img/unity-play.gif">
