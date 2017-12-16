@@ -12,8 +12,9 @@
   <img src="https://img.shields.io/github/issues/relativty/wrmhl.svg">
 </p>
 
-<img src="/img/mpu.gif">
-## You can now create Arduino interactive experience without latency ! ⏱
+<img src="/img/mpu.gif" width="1000">
+<h4 align="center">You can now create Arduino interactive experience without latency ! ⏱
+</h4>
 
 # Getting Started ⚡️
 ## How to Install
