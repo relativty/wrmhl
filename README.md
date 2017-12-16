@@ -12,6 +12,9 @@
   <img src="https://img.shields.io/github/issues/relativty/wrmhl.svg">
 </p>
 
+<img src="/img/mpu.gif">
+## You can now create Arduino interactive experience without latency ! ⏱
+
 # Getting Started ⚡️
 ## How to Install
 You can either install it using [Git](https://git-scm.com/) or direct [Download](https://github.com/relativty/wrmhl/archive/master.zip). Or from the <strong>command line</strong>:
