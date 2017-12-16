@@ -17,7 +17,7 @@
 </h4>
 
 
-## Don’t worry about about Latency, wrmhl is here ⚡️
+## Don’t worry about Latency anymore, wrmhl is here ⚡️
 
 We didn’t find any free, optimized, and customizable solution to tackle this problem. So I built **wmrhl**. You can now connect any Arduino interface to Unity3D.
 
