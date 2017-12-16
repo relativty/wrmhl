@@ -19,7 +19,7 @@
 
 ## Don’t worry about Latency anymore, wrmhl is here ⚡️
 
-We didn’t find any free, optimized, and customizable solution to tackle this problem. So I built **wmrhl**. You can now connect any Arduino interface to Unity3D.
+If you have ever wanted to transmit data from Arduino to Unity3D the main issue is INSANE LATENCY. We didn’t found any free, optimized, and customizable solution to tackle this problem. So I built **wmrhl**. You can now connect any Arduino interface to Unity3D.
 
 - **Just write your Arduino code, how about a [A Touchless 3D Tracking Interface](https://www.youtube.com/watch?v=ikD_3Vemkf0) or a [Brain-Computer Arduino Interface](http://www.instructables.com/id/Arduino-brain-wave-reader/) ?**
 
