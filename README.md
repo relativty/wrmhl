@@ -13,7 +13,7 @@
 </p>
 
 <img src="/img/mpu.gif" width="1000">
-<h4 align="center">You can now create Arduino interactive experience without latency ! ⏱
+<h4 align="center">You can now create an Arduino and Unity3D interactive experience without latency ! ⏱
 </h4>
 
 # Getting Started ⚡️
