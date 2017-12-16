@@ -29,7 +29,7 @@ using UnityEngine;
 public class wrmhlThread_Lines : wrmhlThread { // wrmhlThread_ReadLines is derived from the common wrmhl Thread.
 
 	// This constructor will call wrmhlThread.wrmhlThread(string portName, int baudRate, int readTimeout)
-	public wrmhlThread_Lines(string portName, int baudRate, int readTimeout) : base(portName, baudRate, readTimeout) {
+	public wrmhlThread_Lines(string portName, int baudRate, int readTimeout, int QueueLenght) : base(portName, baudRate, readTimeout, QueueLenght) {
 	}
 
 	// This constructor will call wrmhlThread.wrmhlThread(string portName, int baudRate)

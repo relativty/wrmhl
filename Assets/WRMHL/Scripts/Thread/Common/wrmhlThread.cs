@@ -46,12 +46,13 @@ public abstract class wrmhlThread { // wrmhlThread is the common Thread for rece
 	private Queue outputQueue; // From Unity to Arduino.
 	private Queue inputQueue; // From Arduino to Unity.
 
-	private string dataComingFromDevice;
+	private int QueueLenght = 1;
 
-	public wrmhlThread(string portName, int baudRate, int readTimeout) { // the constructor take the vars coming from wrmhl.cs .
+	public wrmhlThread(string portName, int baudRate, int readTimeout, int QueueLenght) { // the constructor take the vars coming from wrmhl.cs .
 			this.portName = portName;
 			this.baudRate = baudRate;
 			this.readTimeout = readTimeout;
+			this.QueueLenght = QueueLenght;
 	}
 
 	public wrmhlThread(string portName, int baudRate) { // no readTimeout.
@@ -98,7 +99,7 @@ public abstract class wrmhlThread { // wrmhlThread is the common Thread for rece
 
 
 		public string readLatestThread(){ // return the data stocked in the Queue. Independent from the protocol.
-			return dataComingFromDevice;
+			return null; // TO DO: Delete it
 		}
 
 	public void writeThread(string dataToSend){ // add the data to the write Queue. Independent from the protocol.
@@ -110,10 +111,13 @@ public abstract class wrmhlThread { // wrmhlThread is the common Thread for rece
 		while (threadIsLooping ())
 		{
 			// read data
-			dataComingFromDevice = ReadProtocol();
-			if (dataComingFromDevice != null)
-			inputQueue.Enqueue(dataComingFromDevice);
-
+			object dataComingFromDevice = ReadProtocol();
+			if (dataComingFromDevice != null) {
+				if (inputQueue.Count < QueueLenght)
+				{
+						inputQueue.Enqueue(dataComingFromDevice);
+				}
+		}
 			// Send data
 			if (outputQueue.Count != 0)
 			{

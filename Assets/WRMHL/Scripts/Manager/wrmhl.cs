@@ -37,8 +37,8 @@ public class wrmhl {
 	private wrmhlThread_Lines deviceReader; // 0.1 Alpha use wrmhlThread_ReadLines class derived from wrmhlThread.
 
 	// gives the thread the vars needed for connecting your device and Unity:
-	public void set(string portName, int baudRate, int readTimeout){ // Connection requirements.
-		deviceReader = new wrmhlThread_Lines(portName, baudRate, readTimeout); // wrmhlThread_ReadLines will be instancied
+	public void set(string portName, int baudRate, int readTimeout, int QueueLenght){ // Connection requirements.
+		deviceReader = new wrmhlThread_Lines(portName, baudRate, readTimeout, QueueLenght); // wrmhlThread_ReadLines will be instancied
 		//                                                                            with those vars and use them to connect when wrmhl.connect() will be call.
 	}
 
@@ -64,10 +64,6 @@ public class wrmhl {
 	// read the data from your device:
 	public string readQueue(){ // Return the string coming from the device.
 		return deviceReader.readQueueThread(); // call the Thread read method.
-	}
-
-	public string readLatest(){ // Return the string coming from the device.
-		return deviceReader.readLatestThread(); // call the Thread read method.
 	}
 
 	public void send(string dataToSend){
