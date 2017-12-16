@@ -21,9 +21,9 @@
 
 We didn’t find any free, optimized, and customizable solution to tackle this problem. So I built **wmrhl**. You can now connect any Arduino interface to Unity3D.
 
-- **Just write your Arduino code, how about a [A Touchless 3D Tracking Interface](http://www.instructables.com/id/Arduino-brain-wave-reader/) or a [Brain-Computer Arduino Interface](https://www.youtube.com/watch?v=ikD_3Vemkf0) ?**
+- **Just write your Arduino code, how about a [A Touchless 3D Tracking Interface](https://www.youtube.com/watch?v=ikD_3Vemkf0) or a [Brain-Computer Arduino Interface](http://www.instructables.com/id/Arduino-brain-wave-reader/) ?**
 
-- **Add a Serial print to send data from your interface to Unity3D (see [Examples](https://medium.com/r/?url=https%3A%2F%2Fgithub.com%2Frelativty%2Fwrmhl%2Fblob%2Fmaster%2FArduino%2FArduino.ino))**
+- **Add a Serial print to send data from your interface to Unity3D (see [Examples](https://github.com/relativty/wrmhl/blob/master/Arduino/Arduino.ino))**
 
 - **Import wrmhl to Unity, and voila!**
 
