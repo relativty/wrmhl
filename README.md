@@ -13,21 +13,21 @@
 </p>
 
 <img src="/img/mpu.gif" width="1000">
-<h4 align="center">You can now create an Arduino and Unity3D interactive experience without latency ! ⏱
+<h4 align="center">Create an Arduino and Unity3D interactive experience with no latency ! ⏱
 </h4>
 
 
 ## Don’t worry about Latency anymore, wrmhl is here ⚡️
 
-If you have ever wanted to transmit data from Arduino to Unity3D the main issue is INSANE LATENCY. We didn’t found any free, optimized, and customizable solution to tackle this problem. So I built **wmrhl**. You can now connect any Arduino interface to Unity3D.
+If you have ever wanted to transmit data from Arduino to Unity3D the main issue is INSANE LATENCY. We didn’t find any free, optimized, and customizable solutions to tackle this problem. So I built **wmrhl**. You can now connect any Arduino interface to Unity3D.
 
 - **Just write your Arduino code, how about a [A Touchless 3D Tracking Interface](https://www.youtube.com/watch?v=ikD_3Vemkf0) or a [Brain-Computer Arduino Interface](http://www.instructables.com/id/Arduino-brain-wave-reader/) ?**
 
 - **Add a Serial print to send data from your interface to Unity3D (see [Examples](https://github.com/relativty/wrmhl/blob/master/Arduino/Arduino.ino))**
 
-- **Import wrmhl to Unity, and voila!**
+- **Import wrmhl to Unity, and voilà!**
 
-You can use the default protocol, or implement yours without having to deal with thread just by changing [wrmhl/Assets/WRMHL/Scripts/Thread/wrmhlThread_Lines.cs](https://github.com/relativty/wrmhl/blob/master/Assets/WRMHL/Scripts/Thread/wrmhlThread_Lines.cs).
+You can use the default protocol, or implement your own without having to deal with thread just by changing [wrmhl/Assets/WRMHL/Scripts/Thread/wrmhlThread_Lines.cs](https://github.com/relativty/wrmhl/blob/master/Assets/WRMHL/Scripts/Thread/wrmhlThread_Lines.cs).
 
 
 # Getting Started ⚡️
