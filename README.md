@@ -64,9 +64,7 @@ Select **Assets/WRMHL/DemoScenes** and choose the **demo** of your choice !
 
 
 <p align="center">
-  <b>Don't forget to leave some feedback, contributions and suggestions are always welcome !</b><br>
-  <br><br>
-  <img src="http://www.bendigohealth.org.au/Content/Images/smiles_patient_feedback_v1.png" width="500">
+  <b>Don't forget to leave some feedback, contributions and suggestions are always welcome ! 🤝</b><br>
 </p>
 
 
