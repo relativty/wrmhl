@@ -13,7 +13,7 @@ readQueue() will return ->
 								"2", for the second call
 								"3", for the thirst call
 
-This is the perfect script for integration that need to avoid data loose.
+This is the perfect script for integration that need to avoid data loss.
 If you need speed and low latency take a look to wrmhlReadLatest.
 */
 
