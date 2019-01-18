@@ -4,7 +4,7 @@ using UnityEngine;
 
 /*
 This script is used to read all the data coming from the device. For instance,
-If arduino send ->
+If arduino sends ->
 								{"1",
 								"2",
 								"3",}
@@ -13,7 +13,7 @@ readQueue() will return ->
 								"2", for the second call
 								"3", for the thirst call
 
-This is the perfect script for integration that need to avoid data loss.
+This is the perfect script for integrations that need to avoid data loss.
 If you need speed and low latency take a look to wrmhlReadLatest.
 */
 
@@ -42,10 +42,10 @@ public class wrmhlRead : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		print (myDevice.readQueue () ); // myDevice.read() return the data coming from the device using thread.
+		print (myDevice.readQueue () ); // myDevice.read() returns the data coming from the device using thread.
 	}
 
-	void OnApplicationQuit() { // close the Thread and Serial Port
+	void OnApplicationQuit() { // closes the Thread and Serial Port
 		myDevice.close();
 	}
 }
