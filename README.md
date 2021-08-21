@@ -17,7 +17,7 @@
 </h4>
 
 
-## Don’t worry about Latency anymore, wrmhl is here ⚡️
+## Arduino to Unity made simple
 
 If you have ever wanted to transmit data from Arduino to Unity3D the main issue is INSANE LATENCY. We didn’t find any free, optimized, and customizable solutions to tackle this problem. So I built **wrmhl**. You can now connect any Arduino interface to Unity3D.
 
@@ -30,7 +30,7 @@ If you have ever wanted to transmit data from Arduino to Unity3D the main issue 
 You can use the default protocol, or implement your own without having to deal with thread just by changing [wrmhl/Assets/WRMHL/Scripts/Thread/wrmhlThread_Lines.cs](https://github.com/relativty/wrmhl/blob/master/Assets/WRMHL/Scripts/Thread/wrmhlThread_Lines.cs).
 
 
-# Getting Started ⚡️
+# Getting Started
 ## How to Install
 You can either install it using [Git](https://git-scm.com/) or direct [Download](https://github.com/relativty/wrmhl/archive/master.zip). Or from the <strong>command line</strong>:
 
