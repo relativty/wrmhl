@@ -24,8 +24,8 @@ public class wrmhlWrite : MonoBehaviour {
 	public int QueueLenght = 1;
 
 	void Start () {
-		myDevice.set (portName, baudRate, ReadTimeout, QueueLenght); // This method set the communication with the following vars;
-		//                              Serial Port, Baud Rates, Read Timeout and QueueLenght.
+		myDevice.set (portName, baudRate, ReadTimeout, QueueLenght); // This method set the communication with the following vars:
+		//                              				Serial Port, Baud Rates, Read Timeout and QueueLenght.
 		myDevice.connect (); // This method open the Serial communication with the vars previously given.
 	}
 
